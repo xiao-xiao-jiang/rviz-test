@@ -35,3 +35,4 @@
 **/.catkin_tools
 **/devel/
 **/logs/
+**/.vscode/

@@ -3,7 +3,7 @@
   <include file="$(find ur_description)/launch/load_ur5e.launch"/>
 
 
-  <arg name="gui" default="true" />
+  <arg name="gui" default="false" />
   <arg name="rvizconfig" default="$(find ur_description)/launch/config.rviz" />
 
 
@@ -17,6 +17,7 @@
   
   <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true" />
 
+ <include file="$(find ur_control)/launch/control.launch"/>
 
 
 </launch>
